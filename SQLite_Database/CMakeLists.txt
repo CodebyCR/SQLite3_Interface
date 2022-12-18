@@ -1,0 +1,10 @@
+
+set(SQLITE3_INTERFACE_SOURCES
+        "SQLite_DB.hpp")
+
+add_library(${SQLITE_INTERFACE_LIBRARY} INTERFACE ${SQLITE3_INTERFACE_SOURCES} )
+
+
+target_include_directories( ${SQLITE_INTERFACE_LIBRARY}
+        INTERFACE
+        ${CMAKE_CURRENT_SOURCE_DIR} )
